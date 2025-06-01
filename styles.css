@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #eee;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+/* Header styling */
+#header {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+}
+
+#header p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+#header a {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff5722;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+#header a:hover,
+#header a:focus {
+    background: #e64a19;
+}
+
+/* Intro Section styling */
+#top {
+    padding: 2rem 0;
+    background-color: #121212;
+    color: #eee;
+}
+
+#top .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#top header p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+#top header .contact-links a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Project Gallery */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+figure {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    background: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
+    padding: 1rem 0.75rem 0;
+}
+
+figure a {
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+}
+
+figure img {
+    max-height: 220px;
+    max-width: 100%;
+    object-fit: contain;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+figure img:hover,
+figure img:focus {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(255,87,34,0.7);
+}
+
+figcaption {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+    background: #2c2c2c;
+    user-select: none;
+    width: 100%;
+    border-top: 1px solid #3a3a3a;
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    background: #444;
+    color: #fff;
+    padding: 0.2em 0.5em;
+    margin-right: 0.3em;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+/* Contact Links */
+.contact-links a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Remove sidebar */
+#nav {
+    display: none;
+}
+
+/* Responsive font scaling */
+@media (max-width: 480px) {
+    #header h1 {
+        font-size: 1.8rem;
+    }
+    #header p {
+        font-size: 1rem;
+    }
+    #top {
+        padding: 1.5rem 0;
+    }
+}
